@@ -28,7 +28,7 @@ CTEST(solution_of_quadratic_equations, one_root) {
 
     // When
     double x1, x2;
-    const int result = kv(a, b, c, &x1, &x2);
+    const double result = kv(a, b, c, &x1, &x2);
 
     // Then
     const double expected_x1 = 1.5;
