@@ -4,9 +4,9 @@
 
 CTEST(solution_of_quadratic_equations, two_root) {
     // Given
-    const int a = 1;
-    const int b = -3;
-    const int c = 2;
+    const double a = 1;
+    const double b = -3;
+    const double c = 2;
 
     // When
     double x1, x2;
@@ -39,9 +39,9 @@ CTEST(solution_of_quadratic_equations, one_root) {
 
 CTEST(solution_of_quadratic_equations, no_root) {
     // Given
-    const int a = 15;
-    const int b = 1;
-    const int c = 9;
+    const double a = 15;
+    const double b = 1;
+    const double c = 9;
 
     // When
     double x1, x2;
@@ -53,9 +53,9 @@ CTEST(solution_of_quadratic_equations, no_root) {
 
 CTEST(solution_of_quadratic_equations, the_coefficients_are_not_correct) {
     // Given
-    const int a = 0;
-    const int b = 1;
-    const int c = 9;
+    const double a = 0;
+    const double b = 1;
+    const double c = 9;
 
     // When
     double x1, x2;
