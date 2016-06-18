@@ -10,7 +10,7 @@ CTEST(solution_of_quadratic_equations, two_root) {
 
     // When
     double x1, x2;
-    const int result = kv(a, b, c, &x1, &x2);
+    const double result = kv(a, b, c, &x1, &x2);
 
     // Then
     const double expected_x1 = 1, expected_x2 = 2;
@@ -22,9 +22,9 @@ CTEST(solution_of_quadratic_equations, two_root) {
 
 CTEST(solution_of_quadratic_equations, one_root) {
     // Given
-    const int a = 4;
-    const int b = -12;
-    const int c = 9;
+    const double a = 4;
+    const double b = -12;
+    const double c = 9;
 
     // When
     double x1, x2;
@@ -45,7 +45,7 @@ CTEST(solution_of_quadratic_equations, no_root) {
 
     // When
     double x1, x2;
-    const int result = kv(a, b, c, &x1, &x2);
+    const double result = kv(a, b, c, &x1, &x2);
 
     // Then
     ASSERT_EQUAL(ROOT_NOT_FOUND, result);
@@ -59,7 +59,7 @@ CTEST(solution_of_quadratic_equations, the_coefficients_are_not_correct) {
 
     // When
     double x1, x2;
-    const int result = kv(a, b, c, &x1, &x2);
+    const double result = kv(a, b, c, &x1, &x2);
 
     // Then
     ASSERT_EQUAL(INVALUD_ARGUMENTS, result);
